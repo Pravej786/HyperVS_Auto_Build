@@ -19,10 +19,6 @@ on:
         type: boolean
         description: Custom branch
         default: false
-      key:
-        description: 'Active Key'
-        required: true
-        default: ''
 
 jobs:
   Auth:
@@ -70,7 +66,7 @@ jobs:
          uses: actions/checkout@v3
          with:
             ssh-key: ${{ secrets.CLONE_KEY }}
-            repository: buihien224/vietsub_erofs_tool
+            repository: Tumodpro/vietsub_erofs_tool
        
        - name: Setting up
          run: |
